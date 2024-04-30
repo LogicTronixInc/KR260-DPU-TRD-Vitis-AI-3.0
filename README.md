@@ -2,6 +2,10 @@
 This is resource file repository of KR260-DPU-TRD-Vitis-AI-3.0 Vivado flow tutorial at Hackster.io!
 Hackster.io tutorial: https://www.hackster.io/LogicTronix/kria-kr260-dpu-trd-vivado-flow-vitis-ai-3-0-tutorial-0085fd
 
+## Tools required for following above hackster.io tutorial
+1. VIVADO/Vitis 2022.2 \
+2. Petalinux 2022.2 
+
 ## Repository Hierarchy
 
 |--**DPU-B512-architecture** \
@@ -32,7 +36,7 @@ Hackster.io tutorial: https://www.hackster.io/LogicTronix/kria-kr260-dpu-trd-viv
 |\
 |--Images
 
-### Note: for running above firmware file the petalinux BSP project have to be build with above XSA and DPU driver needs to have enabled as mentioned at Hackster.io tutorial above!
+**Note: for running above firmware file the petalinux BSP project have to be build with above XSA and DPU driver needs to have enabled as mentioned at Hackster.io tutorial above!**
 
 ## VIVADO DPU-TRD Block design:
 ![KR260-DPU-TRD](https://github.com/LogicTronixInc/KR260-DPU-TRD-Vitis-AI-3.0/blob/master/Images/KR260-DPU-TRD-Hackster-LogicTronix.png) 
