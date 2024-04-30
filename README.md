@@ -30,7 +30,7 @@ Hackster.io tutorial: https://www.hackster.io/LogicTronix/kria-kr260-dpu-trd-viv
 |----> JSON \
 | \
 |\
-|--Images \
+|--Images
 
 ### Note: for running above firmware file the petalinux BSP project have to be build with above XSA and DPU driver needs to have enabled as mentioned at Hackster.io tutorial above!
 
