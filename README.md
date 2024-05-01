@@ -1,7 +1,7 @@
 # Overview of Machine Learning in Kria Robotics Kit, KR260
-For running any Machine Learning model or examples in AMD-Xilinx MPSoC or Versal Platforms/boards, we have to create a "DPU-TRD" or DPU design in VIVADO or Vitis , create the Bootable OS in Petalinux , boot it on board and load the machine learning model and app for running!\
+**For running any Machine Learning model or examples in AMD-Xilinx MPSoC or Versal Platforms/boards, we have to create a "DPU-TRD" or DPU design in VIVADO or Vitis , create the Bootable OS in Petalinux , boot it on board and load the machine learning model and app for running!**
 
-This Git repo includes the resources for "DPU TRD or how to create DPU design for running ML in Kria KR260 board" and run the basic Resnet50 example on the board. We can run any Vitis AI model zoo examples in the KR260 after following this git repo or hacskter tutorial.\
+***This Git repo includes the resources for "DPU TRD or how to create DPU design for running ML in Kria KR260 board" and run the basic Resnet50 example on the board. We can run any Vitis AI model zoo examples in the KR260 after following this git repo or hacskter tutorial.***
 
 # KR260-DPU-TRD-Vitis-AI-3.0
 This is also resource file repository of KR260-DPU-TRD-Vitis-AI-3.0 Vivado flow detail tutorial at Hackster.io! \
@@ -12,9 +12,10 @@ This is also resource file repository of KR260-DPU-TRD-Vitis-AI-3.0 Vivado flow 
 2. Petalinux 2022.2 
 
 ## Download the Boot image for KR260 and Run ML demo:
-**If you want to run the B4096 or B512 firmware based DPU example in your KR260 then you can download following SD image, burn it on SD card, boot it on KR260 and then copy the B4096 or B512 firmware.** 
+**Do you want to download and directly run the ML demo in KR260 board without folowing above hackster.io tutorial? If you want to run the B4096 (larger DPU architecture) or B512 (smaller DPU) firmware based DPU example in your KR260 then you can download following SD image, burn it on SD card, boot it on KR260 and then copy the B4096 or B512 firmware.** 
+\
 The SD image is created in Petalinux 2022.2 so update the kria boot firmware accordingly by following Kria-SoMs-Wiki page!
-**SD Image Link:** ![KR260-DPU-TRD-2022.2 (Vitis AI 3.0) SD Image](https://drive.google.com/file/d/1tRdoWkcW5G6yxVE_5qjON5FfCq9IKS6E/view?usp=sharing)
+**SD Image Link:** [KR260-DPU-TRD-2022.2 (Vitis AI 3.0) SD Image](https://drive.google.com/file/d/1tRdoWkcW5G6yxVE_5qjON5FfCq9IKS6E/view?usp=sharing)
 
 
 ## Repository Hierarchy
