@@ -32,6 +32,7 @@ The SD image is created in Petalinux 2022.2 so update the kria boot firmware acc
 |----> DTBO \
 |----> BIN \
 |----> JSON \
+|----> PL.DTSI \
 |----> Boot LOG from KR260 \
 | \
 | \
@@ -46,12 +47,37 @@ The SD image is created in Petalinux 2022.2 so update the kria boot firmware acc
 |----> DTBO \
 |----> BIN \
 |----> JSON \
+|----> PL.DTSI \
 |----> Boot LOG from KR260 \
 | \
 |\
 |--Images
 
 **Note: for running above firmware file the petalinux BSP project have to be build with above XSA and DPU driver needs to have enabled as mentioned at Hackster.io tutorial above!**
+
+## How to run Resnet50 on above linked Petalinux Boot Image?
+In the liked boot image there is also "resnet50 application" included while building image. You can follow these steps for runnign the resnet50 application.
+```
+xilinx-kr260-starterkit-20222:~# ls
+app
+xilinx-kr260-starterkit-20222:~# cd app/
+xilinx-kr260-starterkit-20222:~/app# ls
+img  model  samples
+xilinx-kr260-starterkit-20222:~/app# 
+xilinx-kr260-starterkit-20222:~/app# 
+xilinx-kr260-starterkit-20222:~/app# cp model/resnet50.xmodel .
+xilinx-kr260-starterkit-20222:~/app# ls
+img  model  resnet50.xmodel  samples
+xilinx-kr260-starterkit-20222:~/app# 
+xilinx-kr260-starterkit-20222:~/app# 
+xilinx-kr260-starterkit-20222:~/app# env LD_LIBRARY_PATH=samples/lib samples/bin/resnet50 img/bellpeppe-994958.JPEG
+score[945]  =  0.992235     text: bell pepper,
+score[941]  =  0.00315807   text: acorn squash,
+score[943]  =  0.00191546   text: cucumber, cuke,
+score[939]  =  0.000904801  text: zucchini, courgette,
+score[949]  =  0.00054879   text: strawberry,
+xilinx-kr260-starterkit-20222:~#
+```
 
 ## VIVADO DPU-TRD Block design:
 ![KR260-DPU-TRD](https://github.com/LogicTronixInc/KR260-DPU-TRD-Vitis-AI-3.0/blob/master/Images/KR260-DPU-TRD-Hackster-LogicTronix.png) 
