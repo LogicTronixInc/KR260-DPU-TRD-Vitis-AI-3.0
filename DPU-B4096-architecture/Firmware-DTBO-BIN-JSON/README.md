@@ -6,7 +6,8 @@ The provided firmware files are:
 3. pl.dtsi - Device tree generated from XSA. This file is not needed to copy to KR260, it is just for reference.
 4. shell.json - json file. 
 
-**You have to copy BIN, DTBO and JSON into KR260 board's /lib/firmware/xilinx/kr260-dou-trd-b4096 directory and then load it by xmutil loadapp command**
+## How to Load fimrware in KR260- Petalinux boot image?
+Create **/lib/firmware/xilinx/kr260-dpu-trd-b4096** directory in KR260 Board ,  then copy BIN, DTBO and JSON into KR260 board's **/lib/firmware/xilinx/kr260-dpu-trd-b4096** directory and then load it by ***xmutil loadapp command***.
 
 ** Here is again the detail Hackster.io Tutorial:** https://www.hackster.io/LogicTronix/kria-kr260-dpu-trd-vivado-flow-vitis-ai-3-0-tutorial-0085fd
 
@@ -14,7 +15,7 @@ The provided firmware files are:
 
 # Boot Log from KR260 board
 We also have provided the boot log here , this boot log can be compared while running the resnet50 applicaiton on KR260 after loading the firmware.\
-BOOT LOG :  [kr260-dpu-trd-vitis-ai-3.0-B4096-Resnet50-bootlog.log](https://github.com/LogicTronixInc/KR260-DPU-TRD-Vitis-AI-3.0/blob/master/DPU-B4096-architecture/Firmware-DTBO-BIN-JSON/kr260-dpu-trd-vitis-ai-3.0-B4096-Resnet50-bootlog.log) 
+**BOOT LOG** :  [kr260-dpu-trd-vitis-ai-3.0-B4096-Resnet50-bootlog.log](https://github.com/LogicTronixInc/KR260-DPU-TRD-Vitis-AI-3.0/blob/master/DPU-B4096-architecture/Firmware-DTBO-BIN-JSON/kr260-dpu-trd-vitis-ai-3.0-B4096-Resnet50-bootlog.log) 
 
 \
 For any questions or queries, please write us at: info@logictronix.com
